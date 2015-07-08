@@ -1,0 +1,65 @@
+python-heatclient (0.2.9-1) unstable; urgency=medium
+
+  * New upstream release.
+  * Uploading to unstable.
+  * Review (build-)depends for this release.
+  * Calling testr directly (without python setup.py).
+
+ -- Thomas Goirand <zigo@debian.org>  Tue, 15 Apr 2014 16:13:27 +0800
+
+python-heatclient (0.2.8-1) experimental; urgency=low
+
+  * New upstream release.
+  * Added --testr-args='--subunit  ' when calling testr.
+  * New (build-)depends for this release.
+
+ -- Thomas Goirand <zigo@debian.org>  Tue, 01 Oct 2013 14:46:19 +0800
+
+python-heatclient (0.2.4-1) unstable; urgency=low
+
+  * New upstream release.
+  * Add build-depends on python-mock (>= 0.8.0), python-pbr (>= 0.5.20) and
+    python-d2to1 (>= 0.2.11) (Closes: #724174).
+
+ -- Thomas Goirand <zigo@debian.org>  Mon, 23 Sep 2013 02:21:28 +0000
+
+python-heatclient (0.2.3-1) unstable; urgency=low
+
+  [ Thomas Goirand ]
+  * New upstream release.
+  * Added export OSLO_PACKAGE_VERSION=$(VERSION) in debian/rules.
+  * VCS fields now using canonical URLs.
+  * Added build-depends: python-mimeparse (>= 0.1.4), python-testscenarios,
+    python-yaml and testrepository.
+
+  [ Prach Pongpanich ]
+  * Dropped build-depends: python-nose.
+
+ -- Thomas Goirand <zigo@debian.org>  Wed, 24 Jul 2013 16:03:22 +0800
+
+python-heatclient (0.2.2-3) unstable; urgency=low
+
+  [ Prach Pongpanich ]
+  * Drop dependency on python-argparse (Closes: #710718)
+
+  [ Thomas Goirand ]
+  * Make the drop of the python-argparse conditional (eg: it don't drop the
+    dependency if building in Wheezy).
+  * Allow the unit tests to fail if running in Wheezy (because of the lack of
+    the python-argparse build-depends).
+
+ -- Prach Pongpanich <prachpub@gmail.com>  Sun, 02 Jun 2013 07:01:12 +0700
+
+python-heatclient (0.2.2-2) unstable; urgency=low
+
+  * Added missing dependency python-setuptools-git (Closes: #710576), thanks to
+    Jeremy Bicha for reporting.
+  * Ran wrap-and-sort.
+
+ -- Thomas Goirand <zigo@debian.org>  Sat, 01 Jun 2013 09:23:44 +0800
+
+python-heatclient (0.2.2-1) unstable; urgency=low
+
+  * Initial release. (Closes: #705231)
+
+ -- Prach Pongpanich <prachpub@gmail.com>  Thu, 11 Apr 2013 12:03:51 +0700
